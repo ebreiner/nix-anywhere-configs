@@ -18,6 +18,7 @@
   services.openssh.enable = true;
 
   networking.hostId = "XXXXXXXX";
+  networking.hostName = "YYYYYYYY";
 
   environment.systemPackages = map lib.lowPrio [
     pkgs.curl
