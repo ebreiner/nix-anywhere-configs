@@ -23,6 +23,7 @@
     pkgs.curl
     pkgs.gitMinimal
     pkgs.vim
+    pkgs.python3
   ];
 
   users.users.root.openssh.authorizedKeys.keys = [
