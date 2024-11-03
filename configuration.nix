@@ -20,6 +20,15 @@
   networking.hostId = "XXXXXXXX";
   networking.hostName = "YYYYYYYY";
 
+  nix.settings.substituters = [
+    "https://nix-community.cachix.org"
+    "https://cache.nixos.org"
+    "https://nix-cache.aermel.net"
+  ];
+  nix.settings.trusted-public-keys = [
+    "nix-cache.aermel.net-1:TkXGTNH8WeYpjMfwxc/AVovN05xPI4wGzNVvlZTpYGk="
+  ];
+
   environment.systemPackages = map lib.lowPrio [
     pkgs.curl
     pkgs.gitMinimal
