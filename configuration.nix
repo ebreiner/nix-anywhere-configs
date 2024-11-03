@@ -26,7 +26,7 @@
     "https://nix-cache.aermel.net"
   ];
   nix.settings.trusted-public-keys = [
-    "nix-cache.aermel.net-1:TkXGTNH8WeYpjMfwxc/AVovN05xPI4wGzNVvlZTpYGk="
+    "nix-cache.aermel.net:nIgjKq1imiwaDAF0YtMsJ84AYVQPODXaXN4P2f3rI58="
   ];
 
   environment.systemPackages = map lib.lowPrio [
